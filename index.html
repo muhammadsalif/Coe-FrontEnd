@@ -13,93 +13,136 @@
 
 <body>
 
-    <!-- Section one -->
+
     <header>
         <div class="logo">
             <img src="assests/COE-LOGO.png" alt="">
         </div>
     </header>
 
-    <div class="leftdiv">
-        <!-- Container -->
-        <div class="container">
-            <!-- first -->
-            <div class="first">
-                <h1>inbound marketing dictionary</h1>
+    <!-- Section one -->
+    <div class="page">
+
+        <div class="one">
+
+            <div class="leftdiv">
+                <!-- Container -->
+                <div class="container">
+                    <!-- first -->
+                    <div class="first">
+                        <h1>inbound marketing dictionary</h1>
+                    </div>
+
+
+                    <!-- second -->
+                    <div class="second">
+                        <h1>Free eBook: Inbound Marketing Dictionary</h1>
+                    </div>
+
+                </div>
             </div>
 
+            <!-- Section two -->
+            <div class="section2">
 
-            <!-- second -->
-            <div class="second">
-                <h1>Free eBook: Inbound Marketing Dictionary</h1>
+                <!-- section2container -->
+                <div class="section2container">
+
+                    <h4>REVIEW THE KEY CONCEPTS OF TODAY'S DIGITAL MARKETING</h4>
+                    <p>
+                        <br>
+                        <i>CTR</i> , algorithm, bounce rate,<i> gamification , engagement , social proof ...</i>
+                        Innovation
+                        in
+                        the <i>online</i>
+                        world
+                        is constant. But with so much new jargon, there are times when even the most seasoned marketers
+                        go
+                        blank.
+                        <br>
+                        <br>
+                        <br>
+                        The free glossary that we offer you brings together the 75 main terms of Inbound Marketing of
+                        the
+                        moment, explained clearly and directly: we have thought that this way you would save your fellow
+                        more
+                        than a headache, the rest of the company could begin to understand what that is cooked in
+                        meetings
+                        and
+                        you would stop spending saliva repeating yourself ...
+                        <br>
+                        <br>
+                        <br>
+                        This guide with the terminology of Inbound Marketing will help you to:
+                        <br>
+
+                        <ul>
+                            <li>
+                                Discover basic terms and notions of digital marketing.
+                            </li>
+
+                            <li>
+                                Review concepts and trends of current Inbound Marketing.
+                            </li>
+
+                            <li>
+                                Share the guide with the entire company and use it as training material.
+                            </li>
+                        </ul>
+
+                    </p>
+
+                    <div class="bottom">
+                        <div class="top">
+                            <h1>share emotion</h1>
+
+                        </div>
+
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fas fa-envelope"></i>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="container">
+                <h1>ebook inbound marketting dictionary</h1>
+               
+                <form action="none">
+                    <label for="name">Name <br>
+                    <input type="text" name="name" id="name" required>
+                    </label>
+                    <br>
+
+                    <label for="surname">surname <br>
+                    <input type="surname" name="surname" id="surname" required>
+                    </label>
+                    <br>
+                    <label for="email">email <br>
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <br>
+                    <label for="url">website URL <br>
+                    <input type="url" name="url" id="url" required>
+                    </label>
+
+                    <label for="blli"></label>
+                </form>
+
             </div>
 
         </div>
-    </div>
-
-    <!-- Section two -->
-    <div class="section2">
-
-        <!-- section2container -->
-        <div class="section2container">
-
-            <h4>REVIEW THE KEY CONCEPTS OF TODAY'S DIGITAL MARKETING</h4>
-            <p>
-                <br>
-                <i>CTR</i> , algorithm, bounce rate,<i> gamification , engagement , social proof ...</i> Innovation in
-                the <i>online</i>
-                world
-                is constant. But with so much new jargon, there are times when even the most seasoned marketers go
-                blank.
-                <br>
-                <br>
-                <br>
-                The free glossary that we offer you brings together the 75 main terms of Inbound Marketing of the
-                moment, explained clearly and directly: we have thought that this way you would save your fellow more
-                than a headache, the rest of the company could begin to understand what that is cooked in meetings and
-                you would stop spending saliva repeating yourself ...
-                <br>
-                <br>
-                <br>
-                This guide with the terminology of Inbound Marketing will help you to:
-                <br>
-
-                <ul>
-                    <li>
-                        Discover basic terms and notions of digital marketing.
-                    </li>
-
-                    <li>
-                        Review concepts and trends of current Inbound Marketing.
-                    </li>
-
-                    <li>
-                        Share the guide with the entire company and use it as training material.
-                    </li>
-                </ul>
-
-            </p>
-
-            <div class="bottom">
-                <div class="top">
-                    <h1>share emotion</h1>
-
-                </div>
-
-                <div class="icons">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fas fa-envelope"></i>
-
-                </div>
-
-            </div>
-        </div>
 
     </div>
-
 
 
 
@@ -152,13 +195,35 @@
             height: 85%;
         }
 
+        /* Page styling */
+        /* Start */
+        .page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page .two {
+            width: 22%;
+            border: 2px solid black;
+            height: 150vh;
+            position: fixed;
+            right: 100px;
+            top: 15vh;
+            overflow: scroll;
+            scroll-behavior: smooth;
+            background-color: rgb(76, 140, 251);
+        }
+
+        /* end */
+
         /* left div */
         .leftdiv {
             /* position: relative; */
             padding-top: 15vh;
             width: 70%;
             height: 85vh;
-            /* border: 2px solid black; */
+            border: 2px solid black;
             background-color: rgb(255, 245, 238);
         }
 
@@ -214,6 +279,13 @@
             color: rgb(75, 139, 250);
             font-size: 27px;
             font-weight: normal;
+        }
+
+        /* rightdiv */
+        .rightdiv {
+            width: 30%;
+            height: 200vh;
+            border: 2px solid black;
         }
 
         /******************************Section2 */
@@ -284,29 +356,65 @@
             color: rgb(75, 139, 250);
             font-size: 25px;
         }
-         /* Bottoms icons div */
-        .section2container .bottom .icons  
-        {
-            display: flex ;
+
+        /* Bottoms icons div */
+        .section2container .bottom .icons {
+            display: flex;
             justify-content: space-between;
             align-items: center;
             width: 50%;
             height: 50%;
             /* border: 2px solid yellowgreen; */
         }
-        .section2container .bottom .icons i
-        {
+
+        .section2container .bottom .icons i {
             height: auto;
             color: white;
-            padding:5px 7px;
+            padding: 5px 7px;
             border-radius: 50%;
             background-color: rgb(75, 139, 250);
             /* display: flex ; */
             /* justify-content: space-around; */
+        }
 
-        } 
+        /************************************* page and second div styling */
+        .page .two .container 
+        {
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            border: 2px solid orange;
+            /* background-color: rgb(75, 139, 250); */
+            /* font-size: 500px; */
+            font-family: 'Merriweather Sans';
+        }
+        .page .two .container h1
+        {
+            color: white;
+            text-transform: uppercase;
+            font-size: 19px;
+            font-weight: normal;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
 
-        
+        .page .two .container form label
+        {
+            text-transform: capitalize;
+            color: white;
+        }
+        .page .two .container form input
+        {
+            margin-bottom:  19px;
+            background-color: transparent;
+            /* border: none; */
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid white;
+            width: 90%;
+        }
+
         
     </style>
 
