@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assests/cropped-512-32x32.png">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/075a91299f.js" crossorigin="anonymous"></script>
     <title>COE | Center of Excellence.</title>
 
 </head>
@@ -34,13 +34,71 @@
                 <h1>Free eBook: Inbound Marketing Dictionary</h1>
             </div>
 
-
-
-
         </div>
     </div>
 
+    <!-- Section two -->
+    <div class="section2">
 
+        <!-- section2container -->
+        <div class="section2container">
+
+            <h4>REVIEW THE KEY CONCEPTS OF TODAY'S DIGITAL MARKETING</h4>
+            <p>
+                <br>
+                <i>CTR</i> , algorithm, bounce rate,<i> gamification , engagement , social proof ...</i> Innovation in
+                the <i>online</i>
+                world
+                is constant. But with so much new jargon, there are times when even the most seasoned marketers go
+                blank.
+                <br>
+                <br>
+                <br>
+                The free glossary that we offer you brings together the 75 main terms of Inbound Marketing of the
+                moment, explained clearly and directly: we have thought that this way you would save your fellow more
+                than a headache, the rest of the company could begin to understand what that is cooked in meetings and
+                you would stop spending saliva repeating yourself ...
+                <br>
+                <br>
+                <br>
+                This guide with the terminology of Inbound Marketing will help you to:
+                <br>
+
+                <ul>
+                    <li>
+                        Discover basic terms and notions of digital marketing.
+                    </li>
+
+                    <li>
+                        Review concepts and trends of current Inbound Marketing.
+                    </li>
+
+                    <li>
+                        Share the guide with the entire company and use it as training material.
+                    </li>
+                </ul>
+
+            </p>
+
+            <div class="bottom">
+                <div class="top">
+                    <h1>share emotion</h1>
+
+                </div>
+
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fas fa-envelope"></i>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -72,8 +130,8 @@
         header {
             width: 100%;
             height: 15vh;
-            /* background-color: orange; */
-            background-attachment: fixed;
+            background-color: white;
+            position: fixed;
         }
 
         /* Header logo div */
@@ -84,6 +142,7 @@
             margin-left: 100px;
             width: 15%;
             height: 100%;
+            /* position: absolute; */
             /* border: 2px solid black; */
         }
 
@@ -95,9 +154,11 @@
 
         /* left div */
         .leftdiv {
+            /* position: relative; */
+            padding-top: 15vh;
             width: 70%;
             height: 85vh;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             background-color: rgb(255, 245, 238);
         }
 
@@ -106,7 +167,7 @@
             width: 70%;
             height: 100%;
             margin: 0 auto;
-            background-color: teal;
+            /* background-color: teal; */
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -118,40 +179,135 @@
             width: 35%;
             height: 55%;
             margin: 0 auto;
-            background-color: yellow;
-            border: 3px solid tomato;
-            border-radius: 5%;  
+            background-color: rgb(75, 139, 250);
+            /* border: 3px solid tomato; */
+            border-radius: 5%;
             font-family: 'Merriweather Sans', sans-serif;
             display: flex;
             justify-content: center;
-            align-items: baseline;
+            align-items: flex-end;
             /* text-align: end; */
+            text-align: left;
             text-transform: capitalize;
+            color: white;
         }
+
+        .leftdiv .container .first h1 {
+            font-size: 20px;
+        }
+
         /* container second */
         .leftdiv .container .second {
-            width: 70%;
-            border: 2px solid red;
+            width: 91%;
+            /* border: 2px solid red; */
             height: 10%;
             display: flex;
-            justify-content: center;
-            align-self: center;
+            justify-content: flex-start;
+            align-items: flex-end;
             text-align: center;
             overflow: hidden;
-            
-        
         }
-        .leftdiv .container .second h1{
+
+        .leftdiv .container .second h1 {
 
             font-family: 'Merriweather Sans';
             color: rgb(75, 139, 250);
-            font-size: 10px;
-        
+            font-size: 27px;
+            font-weight: normal;
         }
 
+        /******************************Section2 */
+        .section2 {
+            width: 70%;
+            height: 130vh;
+            background-color: rgb(255, 245, 238);
+            /* border: 2px solid orange; */
 
+        }
 
+        .section2container {
+            width: 64%;
+            height: 100%;
+            margin: 0 auto;
+            /* border: 2px solid black; */
+            text-align: left;
+            /* display: flex;
+            justify-content: space-around;
+            flex-direction: column; */
+        }
 
+        .section2container h4 {
+            color: rgb(75, 139, 250);
+            font-family: 'Merriweather Sans';
+            font-weight: normal;
+            font-size: 19px;
+        }
+
+        .section2container p {
+            color: rgb(119, 119, 119);
+            font-family: 'Merriweather Sans';
+            font-weight: lighter;
+            line-height: 30px;
+
+        }
+
+        .section2container p i {
+            color: rgb(68, 68, 68);
+        }
+
+        .section2container ul {
+            text-align: left;
+            color: rgb(119, 119, 119);
+            font-family: 'Merriweather Sans';
+            font-weight: normal;
+            line-height: 40px;
+        }
+
+        /************ bottom */
+        .section2container .bottom {
+            /* border: 2px solid yellow; */
+            width: 60%;
+            height: 10%;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+
+        .section2container .bottom .top h1 {
+            font-family: 'Merriweather Sans';
+            font-weight: 500;
+            text-transform: uppercase;
+            color: rgb(75, 139, 250);
+            font-size: 25px;
+        }
+         /* Bottoms icons div */
+        .section2container .bottom .icons  
+        {
+            display: flex ;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            height: 50%;
+            /* border: 2px solid yellowgreen; */
+        }
+        .section2container .bottom .icons i
+        {
+            height: auto;
+            color: white;
+            padding:5px 7px;
+            border-radius: 50%;
+            background-color: rgb(75, 139, 250);
+            /* display: flex ; */
+            /* justify-content: space-around; */
+
+        } 
+
+        
+        
     </style>
 
 </body>
