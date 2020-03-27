@@ -30,6 +30,10 @@
                 <div class="container">
                     <!-- first -->
                     <div class="first">
+                        
+                        <!-- <img src="assests/round img.jpeg" alt=""> -->
+                        <!-- <img src="assests/round img j2.jpeg" alt=""> -->
+                        
                         <h1>inbound marketing dictionary</h1>
                     </div>
 
@@ -116,26 +120,47 @@
         <div class="two">
             <div class="container">
                 <h1>ebook inbound marketting dictionary</h1>
-               
+
                 <form action="none">
                     <label for="name">Name <br>
-                    <input type="text" name="name" id="name" required>
+                        <input class="input" type="text" name="name" id="name" required>
                     </label>
                     <br>
 
                     <label for="surname">surname <br>
-                    <input type="surname" name="surname" id="surname" required>
+                        <input class="input" type="surname" name="surname" id="surname" required>
                     </label>
                     <br>
                     <label for="email">email <br>
-                        <input type="email" name="email" id="email" required>
+                        <input class="input" type="email" name="email" id="email" required>
                     </label>
                     <br>
                     <label for="url">website URL <br>
-                    <input type="url" name="url" id="url" required>
+                        <input class="input" type="url" name="url" id="url" required>
                     </label>
 
-                    <label for="blli"></label>
+                    <label for="blling">Billing <br>
+                        <select name="amount" id="amount" autofocus required>
+                            <option value=""> - Please Choose One -</option>
+                            <option value="">
+                                < &#8364 500,000</option>
+                            <option value="">
+                                < &#8364 500,000 - &#8364 1 million.</option>
+                            <option value="">
+                                < &#8364 1 million - 10 million</option>
+                            <option value="">
+                                < &#8364 10 million - 50 million</option>
+                        </select>
+                    </label>
+
+                    <label class="checkboxes" for="checkbox">What does your inbound marketing business need?
+
+
+
+                    </label>
+                    
+                    <input class="submitbutton" value="i want it" type="submit">
+
                 </form>
 
             </div>
@@ -167,6 +192,10 @@
         * {
             margin: 0px;
             padding: 0px;
+        }
+
+        body {
+            background-color: rgb(255, 245, 238);
         }
 
         /* Header */
@@ -205,16 +234,19 @@
 
         .page .two {
             width: 22%;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             height: 150vh;
-            position: fixed;
             right: 100px;
             top: 15vh;
-            overflow: scroll;
+            overflow-y: scroll;
             scroll-behavior: smooth;
             background-color: rgb(76, 140, 251);
-        }
+            position: fixed;
+            /* position: absolute; */
+            
 
+        }
+    
         /* end */
 
         /* left div */
@@ -223,7 +255,7 @@
             padding-top: 15vh;
             width: 70%;
             height: 85vh;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             background-color: rgb(255, 245, 238);
         }
 
@@ -240,8 +272,9 @@
         }
 
         /* container first */
-        .leftdiv .container .first {
-            width: 35%;
+        .leftdiv .container .first
+        {
+            width: 38%;
             height: 55%;
             margin: 0 auto;
             background-color: rgb(75, 139, 250);
@@ -249,12 +282,18 @@
             border-radius: 5%;
             font-family: 'Merriweather Sans', sans-serif;
             display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            justify-content: flex-end;
+            align-items: flex-start;
             /* text-align: end; */
             text-align: left;
             text-transform: capitalize;
             color: white;
+            flex-direction: column;
+        }
+        .leftdiv .container .first img
+        {
+            border-radius: 50%;
+            background-color: rgb(75, 139, 250);
         }
 
         .leftdiv .container .first h1 {
@@ -378,18 +417,23 @@
         }
 
         /************************************* page and second div styling */
-        .page .two .container 
-        {
+        .page .two .container {
             width: 90%;
             height: 100%;
             margin: 0 auto;
-            border: 2px solid orange;
+            /* border: 2px solid orange; */
             /* background-color: rgb(75, 139, 250); */
             /* font-size: 500px; */
             font-family: 'Merriweather Sans';
+
         }
-        .page .two .container h1
-        {
+
+        .page .two .container form {
+            height: 100%;
+            /* text-align: auto; */
+        }
+
+        .page .two .container h1 {
             color: white;
             text-transform: uppercase;
             font-size: 19px;
@@ -398,14 +442,13 @@
             padding-bottom: 30px;
         }
 
-        .page .two .container form label
-        {
+        .page .two .container form label {
             text-transform: capitalize;
             color: white;
         }
-        .page .two .container form input
-        {
-            margin-bottom:  19px;
+
+        .page .two .container form .input {
+            margin-bottom: 19px;
             background-color: transparent;
             /* border: none; */
             border-top: none;
@@ -413,9 +456,55 @@
             border-left: none;
             border-bottom: 1px solid white;
             width: 90%;
+            color: white;
         }
 
-        
+        .page .two .container form label select {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            /* border: none; */
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid white;
+            width: 90%;
+            color: white;
+            background-color: rgb(75, 139, 250);
+            font-family: 'Merriweather Sans';
+        }
+
+        .page .two .container form .checkboxes {
+            text-align: center;
+            /* padding-left: 20px; */
+            text-align: right !important;
+            margin-top: 20px;
+            padding-top: 30px;
+
+
+        }
+
+        .page .two .container form .checkboxes label
+        {
+            font-size: 14px;
+        }
+
+
+        .page .two .container form .submitbutton
+        {
+            position: absolute;
+            top: 500px;
+            left: 140px;
+            /* align-items: flex-end; */
+            /* padding-top: 20px; */
+            background-color: white !important;
+            color: rgb(75, 139, 250);
+            font-family: 'Merriweather Sans';
+            padding: 10px 30px;
+            border-radius: 20px;
+            border: none;
+            text-transform: uppercase;
+        }
     </style>
 
 </body>
