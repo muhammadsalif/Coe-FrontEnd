@@ -18,6 +18,9 @@
         <div class="logo">
             <img src="assests/COE-LOGO.png" alt="">
         </div>
+        <div class="right">
+            <i class="fas fa-align-justify"></i>
+        </div>
     </header>
 
     <!-- Section one -->
@@ -205,6 +208,11 @@
             background-color: white;
             position: fixed;
         }
+        header .right
+        {
+            display: none;
+        }
+
 
         /* Header logo div */
         header .logo {
@@ -504,6 +512,131 @@
             border-radius: 20px;
             border: none;
             text-transform: uppercase;
+        }
+
+
+        /********************************************** Responsive**********************************************/
+
+        @media only screen and (max-width: 320px)
+        {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            /* header */
+            header 
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            header .logo
+            {
+                /* border: 2px solid red; */
+                width: 50%;
+                margin-left: 0px;
+            }
+            header .logo img
+            {
+                /* background-color: orange; */
+                width: 100%;
+                height: 100%;
+            }
+
+            header .right
+            {
+                /* border: 2px solid red; */
+                width: 15%;
+                height: 50%;
+                display: initial;
+            }
+            header .right i
+            {
+                font-size: 30px;
+                color: rgb(75, 139, 250);
+                width: 100%;
+                height: 100%;
+            }
+
+
+
+            /* Complete content in it */
+            .page .one{
+                /* border: 5px solid orange; */
+            }
+
+            /* Can call as first page */
+            .page .one .leftdiv 
+            {
+                width: 100%;
+                /* border: 5px solid red; */
+
+            }
+            /* to make content in betwen */
+            .page .one .leftdiv .container
+            {
+                width: 90%;
+                /* border: 5px solid red; */
+
+            }
+            .page .one .leftdiv .first
+            {
+                /* border: 5px solid red; */
+                width: 70%;
+            }   
+            .page .one .leftdiv .second
+            {
+                /* border: 2px solid red; */
+                width: 96%;
+                text-align: left;
+                height: 10vh;
+
+            }
+            .page .one .leftdiv .second h1
+            {
+                font-size: 20px;
+            }
+
+            .page .one .section2 
+            {
+                /* border: 5px solid red; */
+                width: 100%;
+                height: 250vh;
+            }
+
+
+            .page .one .section2 .section2container
+            {
+                /* border: 2px solid red; */
+                width: 90%;
+                height: 100%;
+
+            }
+            .page .one .section2 .section2container .bottom 
+            {
+                width: 70%;
+            }
+            .page .one .section2 .section2container .bottom .top
+            {
+                height: 40%;
+            }
+
+
+            .page .one .section2 .section2container .bottom .icons
+            {
+                width: 100%;
+            }
+
+            /* two */
+            .page .two
+            {
+                display: none;
+                /* width: 100%; */
+                /* height: 100%; */
+                /* position: fixed; */
+            }
+            
         }
     </style>
 
