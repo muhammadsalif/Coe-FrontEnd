@@ -712,11 +712,6 @@
             }
             .mobileform .container form .submitbutton 
             {
-                position: absolute;
-                top: 590px;
-                /* left: 140px; */
-                /* align-items: flex-end; */
-                /* padding-top: 20px; */
                 background-color: white !important;
                 color: rgb(75, 139, 250);
                 font-family: 'Merriweather Sans';
@@ -724,28 +719,25 @@
                 border-radius: 20px;
                 border: none;
                 text-transform: uppercase;
+                /* margin-top: 30px; */
             }
 
             /* Can call as first page */
             .page .one .leftdiv {
                 width: 100%;
-                /* border: 5px solid red; */
 
             }
 
             /* to make content in betwen */
             .page .one .leftdiv .container {
                 width: 90%;
-                /* border: 5px solid red; */
             }
 
             .page .one .leftdiv .first {
-                /* border: 5px solid red; */
                 width: 70%;
             }
 
             .page .one .leftdiv .second {
-                /* border: 2px solid red; */
                 width: 96%;
                 text-align: left;
                 height: 10vh;
@@ -756,13 +748,11 @@
             }
 
             .page .one .section2 {
-                /* border: 5px solid red; */
                 width: 100%;
                 height: 230vh;
             }
 
             .page .one .section2 .section2container {
-                /* border: 2px solid red; */
                 width: 90%;
                 height: 100%;
             }
@@ -779,6 +769,411 @@
                 width: 100%;
             }
 
+        }
+
+        /* Iphone 6s */
+        @media only screen and (max-width: 375px) 
+        {
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            /* header */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            header .logo {
+                /* border: 2px solid red; */
+                width: 50%;
+                margin-left: 0px;
+            }
+
+            header .logo img {
+                /* background-color: orange; */
+                width: 100%;
+                height: 100%;
+            }
+
+            header .right {
+                /* border: 2px solid red; */
+                width: 15%;
+                /* height: 50%; */
+                display: block;
+                cursor: pointer;
+            }
+
+            header .right i {
+                font-size: 30px;
+                color: rgb(75, 139, 250);
+                width: 100%;
+                height: 100%;
+            }
+
+            /* Complete content in it */
+            .page {
+                /* height: 1000vh; */
+                display: flex;
+                flex-direction: column;
+            }
+
+            .page .one {
+                /* border: 5px solid orange; */
+            }
+
+            .page .two {
+                display: none;
+            }
+
+            .mobileform
+            {
+                transition: 0.5s;
+                display: inherit;
+                width: 100%;
+                height: 100vh;
+                /* border: 5px solid red; */
+                padding-top: 15vh;
+                background-color: rgb(76, 140, 251);
+            }
+
+            .mobileform .container 
+            {
+                width: 90%;
+                height: 100%;
+                margin: 0 auto;
+                /* border: 2px solid red; */
+                /* background-color: rgb(75, 139, 250); */
+                /* font-size: 500px; */
+                font-family: 'Merriweather Sans';
+            }
+
+            .mobileform .container form 
+            {
+                height: 100%;
+                /* text-align: auto; */
+            }
+
+            .mobileform .container h1 
+            {
+                color: white;
+                text-transform: uppercase;
+                font-size: 19px;
+                font-weight: normal;
+                padding-top: 40px;
+                padding-bottom: 30px;
+            }
+
+            .mobileform .container form label 
+            {
+                text-transform: capitalize;
+                color: white;
+            }
+
+            .mobileform .container form .input 
+            {
+                margin-bottom: 19px;
+                background-color: transparent;
+                /* border: none; */
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid white;
+                width: 90%;
+                color: white;
+            }
+
+            .mobileform .container form label select
+            {
+                margin-top: 15px;
+                margin-bottom: 20px;
+                background-color: transparent;
+                /* border: none; */
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid white;
+                width: 90%;
+                color: white;
+                background-color: rgb(75, 139, 250);
+                font-family: 'Merriweather Sans';
+            }
+
+            .mobileform .container form .checkboxes
+            {
+                text-align: center;
+                /* padding-left: 20px; */
+                text-align: right !important;
+                margin-top: 20px;
+                padding-top: 30px;
+            }
+
+            .mobileform .container form .checkboxes label 
+            {
+                font-size: 14px;
+            }
+            .mobileform .container form .submitbutton 
+            {
+                background-color: white !important;
+                color: rgb(75, 139, 250);
+                font-family: 'Merriweather Sans';
+                padding: 10px 30px;
+                border-radius: 20px;
+                border: none;
+                text-transform: uppercase;
+            }
+
+            /* Can call as first page */
+            .page .one .leftdiv {
+                width: 100%;
+
+            }
+
+            /* to make content in betwen */
+            .page .one .leftdiv .container {
+                width: 90%;
+            }
+
+            .page .one .leftdiv .first {
+                width: 70%;
+            }
+
+            .page .one .leftdiv .second {
+                width: 96%;
+                text-align: left;
+                height: 10vh;
+            }
+
+            .page .one .leftdiv .second h1 {
+                font-size: 20px;
+            }
+
+            .page .one .section2 {
+                width: 100%;
+                height: 230vh;
+            }
+
+            .page .one .section2 .section2container {
+                width: 90%;
+                height: 100%;
+            }
+
+            .page .one .section2 .section2container .bottom {
+                width: 70%;
+            }
+
+            .page .one .section2 .section2container .bottom .top {
+                height: 40%;
+            }
+
+            .page .one .section2 .section2container .bottom .icons {
+                width: 100%;
+            }
+
+        }
+
+        /* Iphone 7 */
+        @media only screen and (max-width: 414px) 
+        {
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            /* header */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            header .logo {
+                /* border: 2px solid red; */
+                width: 50%;
+                margin-left: 0px;
+            }
+
+            header .logo img {
+                /* background-color: orange; */
+                width: 100%;
+                height: 100%;
+            }
+
+            header .right {
+                /* border: 2px solid red; */
+                width: 15%;
+                /* height: 50%; */
+                display: block;
+                cursor: pointer;
+            }
+
+            header .right i {
+                font-size: 30px;
+                color: rgb(75, 139, 250);
+                width: 100%;
+                height: 100%;
+            }
+
+            /* Complete content in it */
+            .page {
+                /* height: 1000vh; */
+                display: flex;
+                flex-direction: column;
+            }
+
+            .page .one {
+                /* border: 5px solid orange; */
+            }
+
+            .page .two {
+                display: none;
+            }
+
+            .mobileform
+            {
+                transition: 0.5s;
+                display: inherit;
+                width: 100%;
+                height: 100vh;
+                /* border: 5px solid red; */
+                padding-top: 15vh;
+                background-color: rgb(76, 140, 251);
+            }
+
+            .mobileform .container 
+            {
+                width: 90%;
+                height: 100%;
+                margin: 0 auto;
+                /* border: 2px solid red; */
+                /* background-color: rgb(75, 139, 250); */
+                /* font-size: 500px; */
+                font-family: 'Merriweather Sans';
+            }
+
+            .mobileform .container form 
+            {
+                height: 100%;
+                /* text-align: auto; */
+            }
+
+            .mobileform .container h1 
+            {
+                color: white;
+                text-transform: uppercase;
+                font-size: 19px;
+                font-weight: normal;
+                padding-top: 40px;
+                padding-bottom: 30px;
+            }
+
+            .mobileform .container form label 
+            {
+                text-transform: capitalize;
+                color: white;
+            }
+
+            .mobileform .container form .input 
+            {
+                margin-bottom: 19px;
+                background-color: transparent;
+                /* border: none; */
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid white;
+                width: 90%;
+                color: white;
+            }
+
+            .mobileform .container form label select
+            {
+                margin-top: 15px;
+                margin-bottom: 20px;
+                background-color: transparent;
+                /* border: none; */
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid white;
+                width: 90%;
+                color: white;
+                background-color: rgb(75, 139, 250);
+                font-family: 'Merriweather Sans';
+            }
+
+            .mobileform .container form .checkboxes
+            {
+                text-align: center;
+                /* padding-left: 20px; */
+                text-align: right !important;
+                margin-top: 20px;
+                padding-top: 30px;
+            }
+
+            .mobileform .container form .checkboxes label 
+            {
+                font-size: 14px;
+            }
+            .mobileform .container form .submitbutton 
+            {
+                background-color: white !important;
+                color: rgb(75, 139, 250);
+                font-family: 'Merriweather Sans';
+                padding: 10px 30px;
+                border-radius: 20px;
+                border: none;
+                text-transform: uppercase;
+            }
+
+            /* Can call as first page */
+            .page .one .leftdiv {
+                width: 100%;
+
+            }
+
+            /* to make content in betwen */
+            .page .one .leftdiv .container {
+                width: 90%;
+            }
+
+            .page .one .leftdiv .first {
+                width: 70%;
+            }
+
+            .page .one .leftdiv .second {
+                width: 96%;
+                text-align: left;
+                height: 10vh;
+            }
+
+            .page .one .leftdiv .second h1 {
+                font-size: 20px;
+            }
+
+            .page .one .section2 {
+                width: 100%;
+                height: 230vh;
+            }
+
+            .page .one .section2 .section2container {
+                width: 90%;
+                height: 100%;
+            }
+
+            .page .one .section2 .section2container .bottom {
+                width: 70%;
+            }
+
+            .page .one .section2 .section2container .bottom .top {
+                height: 40%;
+            }
+
+            .page .one .section2 .section2container .bottom .icons {
+                width: 100%;
+            }
 
         }
     </style>
